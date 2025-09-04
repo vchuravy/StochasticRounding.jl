@@ -8,6 +8,10 @@ function Enzyme.typetree_inner(::Type{Float32sr}, ctx, dl, seen::Enzyme.Compiler
     return Enzyme.TypeTree(Enzyme.API.DT_Float, -1, ctx)
 end
 
+function Enzyme.get_offsets(::Type{Float32sr})
+    return ((Enzyme.API.DT_Float, 0),)
+end
+
 import Enzyme: EnzymeRules
 import Enzyme: Const, Duplicated
 
