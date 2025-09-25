@@ -10,7 +10,7 @@ end
 
 function Enzyme.get_offsets(::Type{Float64sr})
     return ((Enzyme.API.DT_Double, 0),)
-en
+end
 
 function Enzyme.typetree_inner(::Type{Float32sr}, ctx, dl, seen::Enzyme.Compiler.TypeTreeTable)
     return Enzyme.TypeTree(Enzyme.API.DT_Float, -1, ctx)
